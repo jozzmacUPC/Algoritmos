@@ -1,7 +1,6 @@
 package extra;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -72,12 +71,7 @@ public class capicua extends JFrame implements ActionListener {
 		int numero = 0,numberA = 0, numberB = 0;
 		int a, b, c;
 		
-		int length = txtNumber.getText().length();
 		numero = Integer.parseInt(txtNumber.getText());
-		
-		int terminos[] = new int [length];
-		
-		
 		
 		if(numero < 100 || numero > 999)
 		{
@@ -90,12 +84,9 @@ public class capicua extends JFrame implements ActionListener {
 			b=numero/10;
 			c=numero%10;
 			
-			txtS.setText("" + a + " - "+ b + " - "+ c + " - "+ d+"\n");
+			txtS.setText("" + a + " - "+ b + " - "+ c + "\n");
 			
-			numberA = a*100 + b*10 + c;
-			numberB = c*100 + b*10 + a;
-			
-			if(numberA == numberB)
+			if(a == c)
 			{
 				
 				txtS.append("El numero es capicua");

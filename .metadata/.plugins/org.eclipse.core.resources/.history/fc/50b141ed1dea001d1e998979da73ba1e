@@ -72,12 +72,8 @@ public class capicua extends JFrame implements ActionListener {
 		int numero = 0,numberA = 0, numberB = 0;
 		int a, b, c;
 		
-		int length = txtNumber.getText().length();
+		Dimension d = txtNumber.getSize();
 		numero = Integer.parseInt(txtNumber.getText());
-		
-		int terminos[] = new int [length];
-		
-		
 		
 		if(numero < 100 || numero > 999)
 		{
@@ -90,7 +86,7 @@ public class capicua extends JFrame implements ActionListener {
 			b=numero/10;
 			c=numero%10;
 			
-			txtS.setText("" + a + " - "+ b + " - "+ c + " - "+ d+"\n");
+			txtS.setText("" + a + " - "+ b + " - "+ c + " - "+ d+""\n");
 			
 			numberA = a*100 + b*10 + c;
 			numberB = c*100 + b*10 + a;

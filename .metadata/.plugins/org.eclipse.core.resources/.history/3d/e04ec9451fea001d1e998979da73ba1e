@@ -72,12 +72,8 @@ public class capicua extends JFrame implements ActionListener {
 		int numero = 0,numberA = 0, numberB = 0;
 		int a, b, c;
 		
-		int length = txtNumber.getText().length();
+		int d = txtNumber.getText().length();
 		numero = Integer.parseInt(txtNumber.getText());
-		
-		int terminos[] = new int [length];
-		
-		
 		
 		if(numero < 100 || numero > 999)
 		{
